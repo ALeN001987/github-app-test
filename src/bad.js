@@ -9,3 +9,4 @@ foo(1)
 // touch Fri Sep  5 15:18:40 CST 2025
 // touch Fri Sep  5 15:19:27 CST 2025
 // touch Fri Sep  5 15:23:50 CST 2025
+// scope test Fri Sep  5 16:31:40 CST 2025
