@@ -1,0 +1,10 @@
+failThreshold: 0          # fail if > 0 errors
+maxInlineComments: 5      # cap inline comments
+ignore:
+  - "**/generated/**"
+  - "**/*.snap"
+rules:
+  eqeqeq: ["warn", "smart"]  # downgrade from error to warning
+  curly: "warn"
+labels:
+  skip: "no-bot"
