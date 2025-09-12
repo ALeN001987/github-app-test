@@ -7,3 +7,4 @@ function foo(x) {
 }
 
 foo(1);
+// inline test Fri Sep 12 16:41:00 CST 2025
