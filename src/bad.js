@@ -1,1 +1,14 @@
-function foo(x){ if(x==1)console.log('eqeq'); let y=2; } foo(1)
+function foo(x) {
+  if (x === 1) {
+    console.log('eqeq');
+  }
+  const y = 2;
+  console.log(y);
+}
+
+foo(1);
+// inline test Fri Sep 12 16:41:00 CST 2025
+// force trigger Fri Sep 12 17:03:47 CST 2025
+// force trigger Fri Sep 12 17:04:08 CST 2025
+// ping Sat Sep 13 14:47:12 CST 2025
+// ping Sat Sep 13 14:48:34 CST 2025
