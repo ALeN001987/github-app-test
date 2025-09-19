@@ -1,1 +1,10 @@
-function foo(x){ if(x==1)console.log('== instead of ==='); let y=2; } foo(1)
+// src/bad2.js
+
+function check(x, y) {
+  if (x == y) console.log("loose compare");
+}
+
+const unused = 123;
+let greeting = "Hello"
+
+check(1, "1")
