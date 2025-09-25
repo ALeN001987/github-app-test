@@ -1,4 +1,44 @@
-.button{
-color:red        /* missing semicolons, spacing */
-background:#FFF
-}
+/* src/styles/bad.css */
+
+/* ❌ Wrong hex color format, longhand properties, missing semicolon */
+body {
+    background: #FFF;  
+    color: red
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  
+  /* ❌ Id selector, vendor prefix, !important abuse */
+  #main-content {
+    -webkit-border-radius: 5px;
+    border-radius: 5px !important;
+  }
+  
+  /* ❌ Zero unit (px on 0), invalid nesting */
+  .container {
+    padding: 0px;
+    display: block;
+  
+    .child {
+      display: inline;
+    }
+  }
+  
+  /* ❌ Duplicate property, alphabetical order violation */
+  h1 {
+    color: blue;
+    font-size: 16px;
+    color: green; /* duplicate */
+  }
+  
+  /* ❌ Shorthand violation, long hex, bad case */
+  button {
+    margin: 0px 0px 0px 0px;
+    background-color: #ffffff;
+    COLOR: black;
+  }
+  
