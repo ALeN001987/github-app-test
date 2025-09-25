@@ -1,44 +1,31 @@
-/* src/styles/bad.css */
+/* Guaranteed Stylelint violations */
+body{
+  background: #FFF       /* hex case + missing semicolon */
+  color:red
+}
 
-/* ❌ Wrong hex color format, longhand properties, missing semicolon */
-body {
-    background: #FFF;  
-    color: red
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    margin-left: 20px;
+#main-content {          /* id selector forbidden */
+  -webkit-border-radius: 5px; /* vendor prefix not allowed */
+  border-radius: 5px !important; /* no !important */
+}
+
+.container {
+  padding: 0px;          /* zero should have no unit */
+  display: block;
+
+  .child {               /* invalid nesting in plain CSS */
+    display:inline;
   }
-  
-  /* ❌ Id selector, vendor prefix, !important abuse */
-  #main-content {
-    -webkit-border-radius: 5px;
-    border-radius: 5px !important;
-  }
-  
-  /* ❌ Zero unit (px on 0), invalid nesting */
-  .container {
-    padding: 0px;
-    display: block;
-  
-    .child {
-      display: inline;
-    }
-  }
-  
-  /* ❌ Duplicate property, alphabetical order violation */
-  h1 {
-    color: blue;
-    font-size: 16px;
-    color: green; /* duplicate */
-  }
-  
-  /* ❌ Shorthand violation, long hex, bad case */
-  button {
-    margin: 0px 0px 0px 0px;
-    background-color: #ffffff;
-    COLOR: black;
-  }
-  
+}
+
+h1 {
+  color: blue;
+  font-size: 16px;
+  color: green;          /* duplicate property */
+}
+
+button {
+  margin: 0px 0px 0px 0px;  /* redundant shorthand + zero units */
+  background-color: #ffffff;/* hex length */
+  COLOR: black;             /* property uppercase */
+}
