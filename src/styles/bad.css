@@ -1,0 +1,8 @@
+body {
+color:red          /* Missing semicolon, bad formatting */
+background: #FFF
+}
+
+.unused-class {      /* Unused selector maybe flagged */
+font-weight:bold
+}
