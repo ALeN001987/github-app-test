@@ -1,0 +1,11 @@
+/* Guaranteed Stylelint violations (parseable) */
+body {
+    color:red;                /* no space after colon */
+    color: #FF0000;           /* duplicate property + hex uppercase */
+    padding: 10px  5px;       /* double space */
+  }
+  #main{
+    background-color:#fff;    /* id selector + no space before brace */
+    margin:0px;               /* unit on zero + no space after colon */
+  }
+  
