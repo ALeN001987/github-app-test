@@ -1,0 +1,5 @@
+/* Stylelint + Prettier issues */
+body{
+    background:#FFF /* missing semicolon + hex case */
+    color:red
+  }
