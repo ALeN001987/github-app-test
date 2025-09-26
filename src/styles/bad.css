@@ -1,0 +1,5 @@
+/* multiple issues: missing semicolons, hex case */
+body{
+  background: #FFF
+  color:red
+}

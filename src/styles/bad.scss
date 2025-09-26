@@ -1,0 +1,6 @@
+// missing semicolon & nested rules ok but still complaint on style standard
+.container {
+  .item {
+    color:blue
+  }
+}
