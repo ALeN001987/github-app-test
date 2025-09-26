@@ -1,6 +1,0 @@
-.button{
-  color:#GGG !important      /* invalid hex color -> error */
-  display:block;;            /* duplicate semicolon */
-  margin: 0px 10px 0px 10px  /* 0px should be 0; could be shorthanded */
-  unknown-prop: 12px         /* unknown property */
-}
