@@ -1,0 +1,10 @@
+/* styles/bad.scss */
+$primary: #FF0000;
+
+.nav {
+  color:$primary;;
+  margin:0px;
+  .item{
+    padding: 0px
+  }
+}

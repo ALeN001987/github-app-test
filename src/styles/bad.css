@@ -1,5 +1,6 @@
-/* multiple issues: missing semicolons, hex case */
+/* bad.css */
 body{
-  background: #FFF
+  background: #FFF /* missing semicolon & hex upper-case */
   color:red
+  margin: 0px;
 }
