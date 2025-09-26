@@ -1,5 +1,5 @@
-/* Stylelint + Prettier issues */
-body{
-    background:#FFF /* missing semicolon + hex case */
-    color:red
-  }
+/* More Stylelint violations */
+.container{
+  border:1px solid #000
+  padding:10px
+}

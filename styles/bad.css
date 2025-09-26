@@ -1,5 +1,5 @@
-/* styles/bad.css */
-a{
-  color: #FF0000 /* missing semicolon */
-  padding:0px;
+/* Guaranteed Stylelint violations */
+body{
+  background: #FFF /* hex case + missing semicolon */
+  color:red
 }

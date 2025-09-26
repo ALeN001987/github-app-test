@@ -1,3 +1,2 @@
-/* needs-prettier.ts */
-export const foo=[1,2,3].map( n=>{return n*2} )
-export function hello( ){return'hi'}
+/* Prettier: quotes, spacing, semicolons */
+export const nums=[1,2,3].map(n=>{return n*2})

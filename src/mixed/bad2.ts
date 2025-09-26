@@ -1,3 +1,2 @@
-/* bad2.ts */
-export   const   thing=  1
-export function hi( )  {return  "hi" }
+/* TS: spacing/semicolons; mild lint */
+export function square(n:number){return n*n}

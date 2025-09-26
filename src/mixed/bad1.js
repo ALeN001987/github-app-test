@@ -1,4 +1,8 @@
-/* bad1.js */
-if(foo == 0)
-  bar()
-let x = y + 1
+// ESLint + Prettier issues
+function sum (a,b) { 
+  console.log("adding numbers")
+  if(a== b){
+    return a + b
+  }
+  return a-b
+}

@@ -1,10 +1,7 @@
-/* bad.js */
-function isEqual(a, b){
-  let unused = 42
-  if(a == b) {
-    console.log("equal")
-    return true
-  } else
-    return false
+/* ESLint: eqeqeq, curly, no-unused-vars, quotes, semi */
+function check(x){
+  let unused = 123
+  if (x == 1)
+    console.log("hi")
+  return
 }
-isEqual(1, "1")
