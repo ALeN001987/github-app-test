@@ -1,0 +1,7 @@
+// Stylelint: nested block formatting, missing semicolon
+.container {
+    background:#000
+    .child {
+      color:white
+    }
+  }

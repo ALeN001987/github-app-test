@@ -1,6 +1,7 @@
-function greet(name){
-  if (name == "Alex") console.log("hi"); // loose '==', no curly, double quotes
-  let unused = 42                         // unused var, missing semicolon
-  return 'ok'                             // missing semicolon
+// ESLint: no-unused-vars, eqeqeq, semi, quotes, no-console
+function badCompare(a, b) {
+  let unused = 42
+  if (a == b) {
+    console.log("equal");
+  }
 }
-greet('Alex')
