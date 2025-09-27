@@ -1,3 +1,5 @@
-/* TS: no-explicit-any; Prettier: spacing/semicolons */
-export const add = (a: any, b: any)=> { return a + b }
-const _unusedTs = 42
+// src/ts/demo-bug.ts
+export function add(a: number, b: number): number {
+    const wrong: string = a + b; // TS2322
+    return wrong as unknown as number;
+  }
