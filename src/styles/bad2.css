@@ -1,0 +1,5 @@
+/* Stylelint: missing semicolons, color-hex-case */
+body{
+    background: #FFF /* Missed semicolon */
+    color:red
+  }
