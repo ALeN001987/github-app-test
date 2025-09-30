@@ -1,0 +1,6 @@
+/* ESLint: eqeqeq, curly, no-unused-vars, no-console */
+function greet(name){
+  let unused = 123
+  if(name == 'Alen') console.log("hi", name)
+  return "hey " + name
+}
