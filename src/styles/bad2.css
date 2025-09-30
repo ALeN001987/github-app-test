@@ -1,13 +1,5 @@
-// inside runStylelintNormalized config
-config: { 
-  extends: [
-    "stylelint-config-standard",
-    "stylelint-config-prettier" // disables conflicts with Prettier if you use it
-  ],
-  rules: {
-    "declaration-block-trailing-semicolon": "always",
-    "color-hex-case": "lower",
-    "block-opening-brace-space-before": "always",
-    "block-closing-brace-newline-after": "always"
+/* Stylelint: missing semicolons, color-hex-case */
+body{
+    background: #FFF /* Missed semicolon */
+    color:red
   }
-},

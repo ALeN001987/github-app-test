@@ -1,4 +1,6 @@
-.button{
-color:red        /* missing semicolons, spacing */
-background:#FFF
+/* bad.css */
+body{
+  background: #FFF /* missing semicolon & hex upper-case */
+  color:red
+  margin: 0px;
 }
