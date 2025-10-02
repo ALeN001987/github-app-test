@@ -1,0 +1,7 @@
+/* Clean file should pass Stylelint */
+:root {
+    --primary: #0a58ca;
+  }
+  button {
+    padding: 8px 12px;
+  }
