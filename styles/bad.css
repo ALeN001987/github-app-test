@@ -1,0 +1,5 @@
+/* Guaranteed Stylelint violations */
+body{
+  background: #FFF /* hex case + missing semicolon */
+  color:red
+}
