@@ -1,4 +1,5 @@
-.button{
-color:red        /* missing semicolons, spacing */
-background:#FFF
-}
+/* src/styles/bad.css */
+body{
+    background: #FFF /* missing semicolon, hex case */
+    color:red
+  }
