@@ -8,6 +8,9 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*.{ts,tsx}", "ts/**/*.{ts,tsx}"],
-  "exclude": ["node_modules", "dist", "build", "coverage", "**/*.spec.ts"]
+  "files": [
+    "src/ts/bug5.ts",
+    "src/ts/bug6.ts"
+  ],
+  "exclude": ["node_modules", "dist", "test", "**/*.spec.ts"]
 }
