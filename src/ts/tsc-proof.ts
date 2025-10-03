@@ -1,5 +1,4 @@
-// TS2322 proof
-export function bad(x: number): string {
-    const y: string = x; // TS2322: number not assignable to string
-    return y;
+export function add(a: number, b: number): number {
+    const wrong: string = a + b; // TS2322
+    return wrong;                 // TS2322
   }
