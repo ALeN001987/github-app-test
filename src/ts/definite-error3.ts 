@@ -1,5 +1,5 @@
 // src/ts/definite-error.ts
 export function add(a: number, b: number): number {
   const wrong: number = "not-a-number"; // TS2322: 'string' not assignable to 'number'
-  return a + b + wrong;
+  return c + b + wrong;
 }
