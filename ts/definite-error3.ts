@@ -1,2 +1,2 @@
-export const mustBeString: string = 123;
-export {};
+export const mustBeString: string = 1233;
+export {};  
