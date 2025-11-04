@@ -1,8 +1,11 @@
+# .eslintrc.yml (test repo)
 root: true
+
 env:
   node: true
   es2021: true
 
+# Generic options for JS; TS gets its own parser in overrides
 parserOptions:
   ecmaVersion: latest
   sourceType: module
@@ -15,25 +18,46 @@ extends:
   - plugin:@typescript-eslint/recommended
   - prettier
 
+# Optional: tighten up lint hygiene
+reportUnusedDisableDirectives: true
+
+# Ignore usual build artifacts (ESLint already ignores node_modules by default)
+ignorePatterns:
+  - dist/**
+  - build/**
+  - coverage/**
+
 overrides:
-  - files: ["**/*.ts", "**/*.tsx"]
+  # TypeScript anywhere in the repo (src/**, ts/**, etc.)
+  - files:
+      - "**/*.ts"
+      - "**/*.tsx"
+      - "**/*.cts"
+      - "**/*.mts"
     parser: "@typescript-eslint/parser"
     parserOptions:
       ecmaVersion: latest
       sourceType: module
-      # Optionally, uncomment these if you have tsconfigs:
-      # project: ["./tsconfig.json", "./src/tsconfig.json"]
+      # If you have tsconfigs and want type-aware rules later, uncomment:
+      # project:
+      #   - "./tsconfig.json"
+      #   - "./src/tsconfig.json"
       # tsconfigRootDir: .
     plugins:
       - "@typescript-eslint"
     extends:
       - plugin:@typescript-eslint/recommended
+      - prettier
     rules:
-      # TypeScript-specific rules (customize as needed)
-      "@typescript-eslint/no-unused-vars": "warn"
+      # TS-specific tweaks (adjust to taste)
+      "@typescript-eslint/no-unused-vars":
+        - warn
+        - argsIgnorePattern: "^_"
+          varsIgnorePattern: "^_"
       "@typescript-eslint/explicit-module-boundary-types": "off"
 
-rules:
-  no-unused-vars: "warn"
-  curly: "error"
-  eqeqeq: ["error", "always"]
+  # Optional: commonjs JS files (if you have any) can get special casing
+  - files:
+      - "**/*.cjs"
+    parserOptions:
+      sourceType: script
