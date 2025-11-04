@@ -1,0 +1,7 @@
+$color: #ffffff;
+
+.card {
+  color: $color;
+  padding: 10px;
+  padding: 10px; // duplicate declaration (rule we enabled)
+}
