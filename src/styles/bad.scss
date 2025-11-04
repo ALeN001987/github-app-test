@@ -1,0 +1,4 @@
+.container {
+  .child { color: #123456 }  // <-- missing semicolon
+  width: calc(100% - );      // <-- invalid calc()
+}
