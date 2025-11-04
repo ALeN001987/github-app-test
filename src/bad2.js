@@ -5,7 +5,7 @@ function check(x, y) {
 }
 
 const unused = 123;
-let greeting = "Hello"
+let greeting = "Hello0000"
 
 check(1, "1")
 // touch Thu Sep 18 19:04:37 CST 2025

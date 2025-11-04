@@ -20,7 +20,7 @@ const unusedVar = 42;
 function demo() {
   console.log("should be single quotes");
   if (greeting == "Hello") console.log("no braces");  // curly + eqeqeq + no-console
-  fooNotDefined = 123;  // no-undef
+  fooNotDefined = 123232323;  // no-undef
 }
 
 demo()
